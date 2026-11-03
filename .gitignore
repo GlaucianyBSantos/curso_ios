@@ -1,1 +1,6 @@
 .DS_Store
+# macOS
+.DS_Store
+# Xcode - dados pessoais
+xcuserdata/
+*.xcuserstate
