@@ -6,25 +6,19 @@
 	objectVersion = 90;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		9704D0E6309FCD410027786E /* ConfirmacaoReservaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9704D0E5309FCD230027786E /* ConfirmacaoReservaView.swift */; };
-		9704D0E8309FCEF30027786E /* FavoritosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9704D0E7309FCEE20027786E /* FavoritosView.swift */; };
-		9704D0EE309FE4480027786E /* ReservasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9704D0ED309FE43D0027786E /* ReservasView.swift */; };
-		97C17F5430999B1B0075053F /* DetalhesPacoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C17F5230999B130075053F /* DetalhesPacoteView.swift */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXFileReference section */
 		000000000000000000000120 /* AgenciaDeViagensMeuCeara.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgenciaDeViagensMeuCeara.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9704D0E5309FCD230027786E /* ConfirmacaoReservaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmacaoReservaView.swift; sourceTree = "<group>"; };
-		9704D0E7309FCEE20027786E /* FavoritosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritosView.swift; sourceTree = "<group>"; };
-		9704D0ED309FE43D0027786E /* ReservasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservasView.swift; sourceTree = "<group>"; };
-		97C17F5230999B130075053F /* DetalhesPacoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalhesPacoteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		000000000000000000000010 /* AgenciaDeViagensMeuCeara */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = AgenciaDeViagensMeuCeara;
+			sourceTree = "<group>";
+		};
+		9704D19830A194500027786E /* AgenciaDeViagensMeuCeara 2 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "AgenciaDeViagensMeuCeara 2";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -42,8 +36,8 @@
 			isa = PBXGroup;
 			children = (
 				000000000000000000000010 /* AgenciaDeViagensMeuCeara */,
+				9704D19830A194500027786E /* AgenciaDeViagensMeuCeara 2 */,
 				000000000000000000000020 /* Products */,
-				97C17F5530999B500075053F /* Telas */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,17 +47,6 @@
 				000000000000000000000120 /* AgenciaDeViagensMeuCeara.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		97C17F5530999B500075053F /* Telas */ = {
-			isa = PBXGroup;
-			children = (
-				9704D0ED309FE43D0027786E /* ReservasView.swift */,
-				9704D0E7309FCEE20027786E /* FavoritosView.swift */,
-				9704D0E5309FCD230027786E /* ConfirmacaoReservaView.swift */,
-				97C17F5230999B130075053F /* DetalhesPacoteView.swift */,
-			);
-			path = Telas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -81,6 +64,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				000000000000000000000010 /* AgenciaDeViagensMeuCeara */,
+				9704D19830A194500027786E /* AgenciaDeViagensMeuCeara 2 */,
 			);
 			name = AgenciaDeViagensMeuCeara;
 			productName = MyApp;
@@ -133,10 +117,6 @@
 		000000000000000120000000 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				97C17F5430999B1B0075053F /* DetalhesPacoteView.swift in Sources */,
-				9704D0E8309FCEF30027786E /* FavoritosView.swift in Sources */,
-				9704D0E6309FCD410027786E /* ConfirmacaoReservaView.swift in Sources */,
-				9704D0EE309FE4480027786E /* ReservasView.swift in Sources */,
 			);
 		};
 /* End PBXSourcesBuildPhase section */

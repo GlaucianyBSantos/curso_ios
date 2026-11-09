@@ -8,12 +8,46 @@ struct DetalhesPacoteView: View {
 
     @Binding var reservas: [PacoteViagem]
 
-    @State private var mostrarConfirmacao = false
+    @Environment(\.dismiss) private var dismiss
 
+    @State private var mostrarConfirmacao = false
+    
     private var estaFavorito: Bool {
         favoritos.contains(pacote.id)
     }
 
+    private var simboloMarcaDagua: String {
+
+        switch pacote.imagemNome {
+
+        case "jericoacoara":
+            return "ferry.fill"
+
+        case "canoaQuebrada":
+            return "moon.stars.fill"
+
+        case "fortaleza":
+            return "sun.max.fill"
+
+        case "guaramiranga":
+            return "leaf.fill"
+
+        case "ibiapaba":
+            return "tree.fill"
+
+        case "cumbuco":
+            return "wind"
+
+        case "morroBranco":
+            return "triangle.fill"
+
+        case "cariri":
+            return "music.note"
+
+        default:
+            return "sun.max.fill"
+        }
+    }
     var body: some View {
 
         VStack(spacing: 0) {
@@ -42,16 +76,15 @@ struct DetalhesPacoteView: View {
                     }
                 }
 
-                Image(systemName: "ferry.fill")
-                    .font(.system(size: 100))
+                Image(systemName: simboloMarcaDagua)                    .font(.system(size: 100))
                     .foregroundStyle(.orange.opacity(0.10))
                     .frame(
                         maxWidth: .infinity,
                         maxHeight: .infinity,
                         alignment: .trailing
                     )
-
-                    .padding(.trailing, 20)            }
+                    .padding(.trailing, 20)
+            }
 
             VStack(spacing: 8) {
 
@@ -71,7 +104,10 @@ struct DetalhesPacoteView: View {
             isPresented: $mostrarConfirmacao
         ) {
 
-            Button("OK") { }
+            Button("OK") {
+
+                dismiss()
+            }
 
         } message: {
 
@@ -217,9 +253,10 @@ struct DetalhesPacoteView: View {
         Button {
 
             if !reservas.contains(where: { $0.id == pacote.id }) {
+
                 reservas.append(pacote)
             }
-            print("Quantidade de reservas: \(reservas.count)")
+
             mostrarConfirmacao = true
 
         } label: {
